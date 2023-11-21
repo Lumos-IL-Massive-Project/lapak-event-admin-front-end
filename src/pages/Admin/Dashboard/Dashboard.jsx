@@ -7,7 +7,7 @@ function Admin() {
       <div className="flex flex-row ">
         <SideBar />
         <div className="bg-slate-950 w-full">
-          <h1 className="text-white">Dashboard</h1>
+          <h1 className="text-white underline">Dashboard</h1>
         </div>
       </div>
     </div>
