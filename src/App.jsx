@@ -17,7 +17,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route element={<Login />} path="/admin" />
+          <Route element={<Login />} path="/" />
           <Route element={<Admin />} path="/admin/dashboard" />
           <Route element={<Kategori />} path="/admin/kategori" />
           <Route element={<User />} path="/admin/user" />
