@@ -5,7 +5,7 @@ function Login() {
     <div className="bg-[#926cf1]">
       <div className="container max-w-5xl mx-auto py-24">
         <div className="grid grid-cols-2">
-          <div className="bg-[#7A51E3] p-20 border-r-2 border-b-2 border-zinc-700">
+          <div className="bg-[#7A51E3] p-20 border-r-2 border-b-2 border-[#7A51E3]">
             <form action="/admin/dashboard" method="postX">
               <img src="/src/img/Logo.png" alt="Logo" className="mx-auto" />
               <h1 className="font-extrabold mb-5 mt-3 text-3xl text-center text-white">
