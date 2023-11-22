@@ -20,7 +20,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="w-[280px] bg-violet-800 pb-10 md:pb-0 md:grid">
+    <div className="w-[280px] bg-[#7A51E3] pb-10 md:pb-0 md:grid">
       <div id="sidebar-wrapper" className="h-screen text-white">
         <div title="profile" className="flex flex-col items-center mt-4">
           <div>
