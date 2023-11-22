@@ -26,8 +26,8 @@ const SideBar = () => {
           <h1>Dinda marli</h1>
           <h2>abilong@gmial.com</h2>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 pt-5 shadow-inner shadow-slate-600">
-          <ul className="flex flex-col items-start justify-center gap-[10px]">
+        <div className="flex flex-col items-center justify-center mt-5 pt-8 shadow-inner shadow-slate-600">
+          <ul className="flex flex-col items-start justify-center gap-[24px]">
             <li>
               <Link
                 to="/admin/dashboard"
@@ -39,7 +39,7 @@ const SideBar = () => {
                 Dashboard
               </Link>
             </li>
-            <ul className="mt-1">
+            <ul>
               <li
                 className={`py-1 pl-2 pr-1 rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold cursor-pointer`}
                 onClick={handleDropdown}

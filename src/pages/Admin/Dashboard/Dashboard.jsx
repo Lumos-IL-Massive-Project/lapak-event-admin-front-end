@@ -6,8 +6,8 @@ function Admin() {
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
         <SideBar />
-        <div className="bg-slate-950 w-full">
-          <h1 className="text-white underline">Dashboard</h1>
+        <div className="w-full">
+          <h1 className="text-black underline">Dashboard</h1>
         </div>
       </div>
     </div>
