@@ -1,14 +1,12 @@
 import React from "react";
 import SideBar from "../../../components/SideBar";
-import Navbar from "../../../components/Navbar";
 
 function Admin() {
   return (
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
         <SideBar />
-        <div className="bg-slate-950 w-full bg-white">
-          <Navbar />
+        <div className="bg-slate-950 w-full">
           <main className="container mx-auto bg-white p-8">
             <section>
               <h2 className="text-3xl font-bold text-[#7A51E3]">Dashboard</h2>
