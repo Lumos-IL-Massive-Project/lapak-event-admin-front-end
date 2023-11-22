@@ -8,7 +8,7 @@ const Kategori = () => {
       <div className="flex flex-row ">
         <SideBar />
         <div className="bg-slate-950 w-full bg-white">
-        <Navbar />
+          <Navbar />
           <main className="container mx-auto bg-white p-8">
             <section className="mb-5">
               <h2 className="text-3xl font-bold text-[#7A51E3]">Kategori</h2>
