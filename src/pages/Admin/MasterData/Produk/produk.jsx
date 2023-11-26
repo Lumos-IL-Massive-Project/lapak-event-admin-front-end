@@ -7,7 +7,7 @@ const Kategori = () => {
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
         <SideBar />
-        <div className="bg-slate-950 w-full bg-white">
+        <div className="bg-slate-950 w-full">
           <Navbar />
           <main className="container mx-auto bg-white p-8">
             <section className="mb-5">
@@ -17,7 +17,6 @@ const Kategori = () => {
             <section>
               <div className="relative shadow-md sm:rounded-lg border overflow-hidden">
                 <div className="mb-4 p-3">
-
                   <div className="float-right">
                     <input
                       type="search"
@@ -30,8 +29,7 @@ const Kategori = () => {
 
                     <button
                       type="button"
-                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]"
-                    >
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]">
                       <i class="fa-solid fa-filter mr-2"></i> Filter
                     </button>
                   </div>

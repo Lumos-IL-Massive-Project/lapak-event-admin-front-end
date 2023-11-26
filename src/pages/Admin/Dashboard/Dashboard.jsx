@@ -7,7 +7,7 @@ function Admin() {
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
         <SideBar />
-        <div className="bg-slate-950 w-full bg-white">
+        <div className="bg-slate-950 w-full">
           <Navbar />
           <main className="container mx-auto bg-white p-8">
             <section>
@@ -320,12 +320,12 @@ function Admin() {
                         <div className="">
                           <button
                             type="button"
-                            className="text-gray-900 bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-gray-900 focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-gray-900 [#7A51E3]:hover:border-[#7A51E3] dark:focus:ring-[#7A51E3]">
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51EB] [#7A51E3]:hover:border-[#7A51E3] dark:focus:ring-[#7A51E3]">
                             Previous
                           </button>
                           <button
                             type="button"
-                            className="text-gray-900 bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-gray-900 focus:ring-4 focus:ring-gray-[#7A51E3] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-gray-900 [#7A51E3]:hover:border-[#7A51E3] dark:focus:ring-[#7A51E3]">
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 focus:ring-gray-[#7A51E3] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51EB] [#7A51E3]:hover:border-[#7A51E3] dark:focus:ring-[#7A51E3]">
                             Next
                           </button>
                         </div>

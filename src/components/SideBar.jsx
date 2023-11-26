@@ -36,30 +36,27 @@ const SideBar = () => {
                 to="/admin/dashboard"
                 className={` py-1 pl-2 pr-5 rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                   "/admin/dashboard"
-                )}`}
-              >
-                <i class="fa-solid fa-gauge"></i>
+                )}`}>
+                <i className="fa-solid fa-gauge"></i>
                 Dashboard
               </Link>
             </li>
             <ul>
               <li
                 className={`py-1 pl-2 pr-1 text-white rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold cursor-pointer`}
-                onClick={handleDropdown}
-              >
+                onClick={handleDropdown}>
                 <img src={masterdata} className="w-4 " />
                 Master Data
-                <i class="fa-solid fa-caret-down"></i>
-              </li >
+                <i className="fa-solid fa-caret-down"></i>
+              </li>
               <ul className={`${openDropDown ? "hidden" : "block"} `}>
                 <li>
                   <Link
                     to="/admin/kategori"
                     className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                       "/admin/kategori"
-                    )}`}
-                  >
-                    <i class="fa-solid fa-folder"></i>
+                    )}`}>
+                    <i className="fa-solid fa-folder"></i>
                     Kategori
                   </Link>
                 </li>
@@ -68,9 +65,8 @@ const SideBar = () => {
                     to="/admin/produk"
                     className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                       "/admin/produk"
-                    )}`}
-                  >
-                    <i class="fa-solid fa-film"></i>
+                    )}`}>
+                    <i className="fa-solid fa-film"></i>
                     Produk
                   </Link>
                 </li>
@@ -79,9 +75,8 @@ const SideBar = () => {
                     to="/admin/user"
                     className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                       "/admin/user"
-                    )}`}
-                  >
-                    <i class="fa-solid fa-book-open-reader"></i>
+                    )}`}>
+                    <i className="fa-solid fa-book-open-reader"></i>
                     User
                   </Link>
                 </li>
@@ -90,9 +85,8 @@ const SideBar = () => {
                     to="/admin/promo"
                     className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                       "/admin/promo"
-                    )}`}
-                  >
-                    <i class="fa-solid fa-receipt"></i>
+                    )}`}>
+                    <i className="fa-solid fa-receipt"></i>
                     Promo
                   </Link>
                 </li>
@@ -101,9 +95,8 @@ const SideBar = () => {
                     to="/admin/metode"
                     className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                       "/admin/metode"
-                    )}`}
-                  >
-                    <i class="fa-solid fa-bars-progress"></i>
+                    )}`}>
+                    <i className="fa-solid fa-bars-progress"></i>
                     Metode
                   </Link>
                 </li>
@@ -114,9 +107,8 @@ const SideBar = () => {
                 to="/admin/transaksi"
                 className={`py-1 pl-2 pr-5 rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                   "/admin/transaksi"
-                )}`}
-              >
-                <i class="fa-solid fa-hand-holding-dollar"></i>
+                )}`}>
+                <i className="fa-solid fa-hand-holding-dollar"></i>
                 Transaksi
               </Link>
             </li>
@@ -125,9 +117,8 @@ const SideBar = () => {
                 to="/admin/pendaftaran"
                 className={`py-1 pl-2 pr-5 rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                   "/admin/pendaftaran"
-                )}`}
-              >
-                <i class="fa-solid fa-file"></i>
+                )}`}>
+                <i className="fa-solid fa-file"></i>
                 Pendaftaran
               </Link>
             </li>
@@ -136,9 +127,8 @@ const SideBar = () => {
                 to="/admin/notifikasi"
                 className={`py-1 pl-2 pr-5 rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
                   "/admin/notifikasi"
-                )}`}
-              >
-                <i class="fa-solid fa-bell"></i>
+                )}`}>
+                <i className="fa-solid fa-bell"></i>
                 Notifikasi
               </Link>
             </li>
