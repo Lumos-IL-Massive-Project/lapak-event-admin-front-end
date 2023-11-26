@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../../../../components/SideBar";
 import Navbar from "../../../../components/Navbar";
-import KonfModal from "../../../../components/KonfModal";
+import Modal from "../../../../components/Modal";
 
 const User = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
@@ -27,14 +29,14 @@ const User = () => {
                       placeholder="Search"
                       name="username"
                       id="username"
-                      autocomplete="off"
+                      autoComplete="off"
                       className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] focus:ring-2 focus:ring-inset focus:ring-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
                     />
 
                     <button
                       type="button"
                       className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3]">
-                      <i class="fa-solid fa-filter mr-2"></i> Filter
+                      <i className="fa-solid fa-filter mr-2"></i> Filter
                     </button>
                   </div>
                 </div>
@@ -85,300 +87,23 @@ const User = () => {
                       <td className="text-center px-6 py-4">
                         <span>EO</span>
                       </td>
-                      <td className="px-6 py-4">
-                        <p className="mx-auto">
-                          <KonfModal
-                            atribut={"text-yellow-500"}
-                            valueLabe={"Detail"}>
-                            <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
-                              <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
-                                Detail User
-                              </h2>
-
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Nama
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="Dhiya"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Email
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="dhiyali@gmail.com"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  No Telpon
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="081234567890"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  OTP
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="165730"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Konfirmasi Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Role
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="EO"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </KonfModal>
+                      <td className="text-center px-6 py-4">
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
                           <span className="mx-1">|</span>
                           <span className="text-[#7A51E3]">Edit</span>
-                        </p>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>2</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Anisa</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Ania21@gmail.com</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>085573098097</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>1245</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Customer</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <p className="mx-auto">
-                          <KonfModal
-                            atribut={"text-yellow-500"}
-                            valueLabe={"Detail"}>
-                            <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
-                              <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
-                                Detail User
-                              </h2>
-
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Nama
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="Dhiya"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Email
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="dhiyali@gmail.com"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  No Telpon
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="081234567890"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  OTP
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="165730"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Konfirmasi Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Role
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="EO"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </KonfModal>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="text-center px-6 py-4">
-                        <span>3</span>
+                        <span>1</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Anisa</span>
@@ -395,450 +120,18 @@ const User = () => {
                       <td className="text-center px-6 py-4">
                         <span>EO</span>
                       </td>
-                      <td className="px-6 py-4">
-                        <p className="mx-auto">
-                          <KonfModal
-                            atribut={"text-yellow-500"}
-                            valueLabe={"Detail"}>
-                            <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
-                              <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
-                                Detail User
-                              </h2>
-
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Nama
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="Dhiya"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Email
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="dhiyali@gmail.com"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  No Telpon
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="081234567890"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  OTP
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="165730"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Konfirmasi Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Role
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="EO"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </KonfModal>
+                      <td className="text-center px-6 py-4">
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
                           <span className="mx-1">|</span>
                           <span className="text-[#7A51E3]">Edit</span>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="text-center px-6 py-4">
-                        <span>4</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Anisa</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Ania21@gmail.com</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>085573098097</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>1245</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Customer</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <p className="mx-auto">
-                          <KonfModal
-                            atribut={"text-yellow-500"}
-                            valueLabe={"Detail"}>
-                            <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
-                              <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
-                                Detail User
-                              </h2>
-
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Nama
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="Dhiya"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Email
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="dhiyali@gmail.com"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  No Telpon
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="081234567890"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  OTP
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="165730"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Konfirmasi Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Role
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="EO"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </KonfModal>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="text-center px-6 py-4">
-                        <span>5</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Anisa</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>Ania21@gmail.com</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>085573098097</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>1245</span>
-                      </td>
-                      <td className="text-center px-6 py-4">
-                        <span>EO</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <p className="mx-auto">
-                          <KonfModal
-                            atribut={"text-yellow-500"}
-                            valueLabe={"Detail"}>
-                            <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
-                              <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
-                                Detail User
-                              </h2>
-
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Nama
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="Dhiya"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Email
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="dhiyali@gmail.com"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  No Telpon
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="081234567890"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  OTP
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="165730"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Konfirmasi Password
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="password"
-                                    value="indonesia"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                              <div className="sm:col-span-3 mb-4">
-                                <label
-                                  for="username"
-                                  className="block text-xl font-medium leading-6">
-                                  Role
-                                </label>
-                                <div className="mt-2">
-                                  <input
-                                    type="text"
-                                    value="EO"
-                                    nameX="username"
-                                    id="username"
-                                    autocomplete="off"
-                                    className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </KonfModal>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
-                        </p>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -854,6 +147,153 @@ const User = () => {
                 </div>
               </div>
             </section>
+
+            {showModal && (
+              <Modal setOpenModal={setShowModal}>
+                <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
+                  <h2 className="text-2xl font-bold text-[#7A51E3] mb-10">
+                    Detail User
+                  </h2>
+
+                  <div className="form mb-16">
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Nama
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Dhiya"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="email"
+                        className="block text-lg font-medium leading-6">
+                        Email
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="email"
+                          readOnly
+                          value="dhiyali@gmail.com"
+                          name="email"
+                          id="email"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="telpon"
+                        className="block text-lg font-medium leading-6">
+                        No Telpon
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="081234567890"
+                          name="telpon"
+                          id="telpon"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="otp"
+                        className="block text-lg font-medium leading-6">
+                        OTP
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="165730"
+                          name="otp"
+                          id="otp"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="password"
+                        className="block text-lg font-medium leading-6">
+                        Password
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="password"
+                          readOnly
+                          value="indonesia"
+                          name="password"
+                          id="password"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="password2"
+                        className="block text-lg font-medium leading-6">
+                        Konfirmasi Password
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="password"
+                          readOnly
+                          value="indonesia"
+                          name="password2"
+                          id="password2"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="username"
+                        className="block text-lg font-medium leading-6">
+                        Role
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="EO"
+                          name="username"
+                          id="username"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="w-full">
+                    <button
+                      type="button"
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right">
+                      <i className="fa-solid fa-filter mr-2"></i> Kembali
+                    </button>
+                  </div>
+                </div>
+              </Modal>
+            )}
           </main>
         </div>
       </div>

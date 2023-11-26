@@ -108,7 +108,7 @@ function Admin() {
                   placeholder="Search"
                   name="username"
                   id="username"
-                  autocomplete="off"
+                  autoComplete="off"
                   className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] focus:ring-2 focus:ring-inset focus:ring-[#7A51E3] sm:text-sm sm:leading-6 float-right w-72"
                 />
               </div>
@@ -316,7 +316,7 @@ function Admin() {
                     </tr>
 
                     <tr className="border">
-                      <td className="px-6 py-4" colspan="3">
+                      <td className="px-6 py-4" colSpan="3">
                         <div className="">
                           <button
                             type="button"

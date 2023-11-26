@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../../../components/SideBar";
 import Navbar from "../../../components/Navbar";
+import Modal from "../../../components/Modal";
 
 const Pendaftaran = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
         <SideBar />
-        <div className="bg-slate-950 w-full bg-white">
+        <div className="bg-slate-950 w-full">
           <Navbar />
           <main className="container mx-auto bg-white p-8">
             <section className="mb-7">
@@ -23,15 +26,14 @@ const Pendaftaran = () => {
                       placeholder="Search"
                       name="username"
                       id="username"
-                      autocomplete="off"
+                      autoComplete="off"
                       className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] focus:ring-2 focus:ring-inset focus:ring-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
                     />
 
                     <button
                       type="button"
-                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]"
-                    >
-                      <i class="fa-solid fa-filter mr-2"></i> Filter
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]">
+                      <i className="fa-solid fa-filter mr-2"></i> Filter
                     </button>
                   </div>
                 </div>
@@ -79,13 +81,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -107,13 +113,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -135,13 +145,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -163,13 +177,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -191,13 +209,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -219,13 +241,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -247,13 +273,17 @@ const Pendaftaran = () => {
                         </span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-amber-300">
-                          Detail
-                        </a>
-                        <span className="mx-2">|</span>
-                        <a href="#" className="text-indigo-600">
-                          Edit
-                        </a>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setShowModal(true);
+                            }}
+                            className="text-yellow-500">
+                            Detail
+                          </button>
+                          <span className="mx-1">|</span>
+                          <span className="text-[#7A51E3]">Edit</span>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -269,7 +299,275 @@ const Pendaftaran = () => {
                 </div>
               </div>
             </section>
-          </main>{" "}
+
+            {showModal && (
+              <Modal setOpenModal={setShowModal}>
+                <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
+                  <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
+                    Detail Produk
+                  </h2>
+
+                  <div className="form  mb-16">
+                    <h4 className="block text-xl font-bold leading-6 mb-2 text-[#7A51E3]">
+                      Informasi Perusahaan
+                    </h4>
+
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Nama Perusahaan
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Xiomi"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Pemilik Perusahan
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Mark Zuckberg"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        NPWP Perusahaan
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="0923412"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+
+                    <h4 className="block text-xl font-bold leading-6 mb-2 mt-7 text-[#7A51E3]">
+                      Informasi Perusahaan
+                    </h4>
+
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Nama Event Organizer
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="0923412"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="deskripsi"
+                        className="block text-lg font-medium leading-6">
+                        BIO
+                      </label>
+                      <div className="mt-2">
+                        <textarea
+                          name="deskripssi"
+                          id="deskripsi"
+                          readOnly
+                          className="block w-full h-32 rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border">
+                          Event Organizer kreatif, berpengalaman, dan handal
+                          menciptakan momen tak terlupakan. Solusi lengkap untuk
+                          acara sukses dan berkesan.
+                        </textarea>
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Negara
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Indonesia"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Propinsi
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Sulawesi Selatan"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Kota
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Bulukumba"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Kode Post
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="92552"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="deskripsi"
+                        className="block text-lg font-medium leading-6">
+                        Alamat Kantor
+                      </label>
+                      <div className="mt-2">
+                        <textarea
+                          name="deskripssi"
+                          id="deskripsi"
+                          readOnly
+                          className="block w-full h-32 rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border">
+                          Desa Towale KAbupaten Donggala Sulwesi tengah Dan lain
+                          lain
+                        </textarea>
+                      </div>
+                    </div>
+
+                    <h4 className="block text-xl font-bold leading-6 mb-2 mt-7 text-[#7A51E3]">
+                      Sosial Media
+                    </h4>
+
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Instagram
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="Ali Asagri"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Linkedin
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="94351"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="kategori"
+                        className="block text-lg font-medium leading-6">
+                        Drible
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value="94351"
+                          name="kategori"
+                          id="kategori"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="w-full">
+                    <button
+                      type="button"
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right">
+                      <i className="fa-solid fa-filter mr-2"></i> Kembali
+                    </button>
+                  </div>
+                </div>
+              </Modal>
+            )}
+          </main>
         </div>
       </div>
     </div>

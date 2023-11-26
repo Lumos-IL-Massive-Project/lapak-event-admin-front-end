@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SideBar from "../../../../components/SideBar";
 import Navbar from "../../../../components/Navbar";
-import KonfModal from "../../../../components/KonfModal";
 
 const Kategori = () => {
   return (
@@ -28,14 +27,14 @@ const Kategori = () => {
                       placeholder="Search"
                       name="username"
                       id="username"
-                      autocomplete="off"
+                      autoComplete="off"
                       className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
                     />
 
                     <button
                       type="button"
                       className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]">
-                      <i class="fa-solid fa-filter mr-2"></i> Filter
+                      <i className="fa-solid fa-filter mr-2"></i> Filter
                     </button>
                   </div>
                 </div>
