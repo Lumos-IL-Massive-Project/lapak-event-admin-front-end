@@ -224,9 +224,9 @@ const Kategori = () => {
             </section>
 
             {showModal && (
-              <Modal setOpenModal={setShowModal}>
+              <Modal>
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
-                  <h2 className="text-2xl font-bold text-[#7A51E3] mb-10">
+                  <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
                     Detail Produk
                   </h2>
 
@@ -362,8 +362,9 @@ const Kategori = () => {
                   <div className="w-full">
                     <button
                       type="button"
-                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right">
-                      <i className="fa-solid fa-filter mr-2"></i> Kembali
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
+                      onClick={() => setShowModal(false)}>
+                      Kembali
                     </button>
                   </div>
                 </div>

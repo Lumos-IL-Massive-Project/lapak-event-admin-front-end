@@ -5,6 +5,7 @@ import Modal from "../../../../components/Modal";
 
 const User = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showModalAdd, setShowModalAdd] = useState(false);
 
   return (
     <div className="bg-[#DDE5E9]">
@@ -20,7 +21,11 @@ const User = () => {
             <section>
               <div className="relative shadow-md sm:rounded-lg border overflow-hidden">
                 <div className="mb-4 p-3">
-                  <button className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5">
+                  <button
+                    onClick={() => {
+                      setShowModalAdd(true);
+                    }}
+                    className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5">
                     <i className="fa-solid fa-plus text-white"></i>
                   </button>
                   <div className="float-right">
@@ -149,7 +154,7 @@ const User = () => {
             </section>
 
             {showModal && (
-              <Modal setOpenModal={setShowModal}>
+              <Modal>
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
                   <h2 className="text-2xl font-bold text-[#7A51E3] mb-10">
                     Detail User
@@ -287,8 +292,30 @@ const User = () => {
                   <div className="w-full">
                     <button
                       type="button"
-                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right">
-                      <i className="fa-solid fa-filter mr-2"></i> Kembali
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
+                      onClick={() => setShowModal(false)}>
+                      Kembali
+                    </button>
+                  </div>
+                </div>
+              </Modal>
+            )}
+
+            {showModalAdd && (
+              <Modal>
+                <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
+                  <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
+                    Tambah User
+                  </h2>
+
+                  <div className="form mb-16"></div>
+
+                  <div className="w-full">
+                    <button
+                      type="button"
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
+                      onClick={() => setShowModalAdd(false)}>
+                      Kembali
                     </button>
                   </div>
                 </div>
