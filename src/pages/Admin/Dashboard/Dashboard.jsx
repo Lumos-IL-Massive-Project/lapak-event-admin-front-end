@@ -320,12 +320,12 @@ function Admin() {
                         <div className="">
                           <button
                             type="button"
-                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51EB] [#7A51E3]:hover:border-[#7A51E3] dark:focus:ring-[#7A51E3]">
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
                             Previous
                           </button>
                           <button
                             type="button"
-                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 focus:ring-gray-[#7A51E3] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51EB] [#7A51E3]:hover:border-[#7A51E3] dark:focus:ring-[#7A51E3]">
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
                             Next
                           </button>
                         </div>
