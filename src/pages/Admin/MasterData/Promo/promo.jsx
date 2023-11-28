@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../../../../components/SideBar";
-import voucher from "../../../../img/voucher.png";
 import Navbar from "../../../../components/Navbar";
-import Filter from "../../../../components/Filter";
+import Modal from "../../../../components/Modal";
+import Filter from "../../../../components/Filter"
 
 const Promo = () => {
+  const [showModalAdd, setShowModalAdd] = useState(false);
+
   return (
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
@@ -19,10 +21,14 @@ const Promo = () => {
             <section>
               <div className="relative shadow-md sm:rounded-lg border overflow-hidden">
                 <div className="mb-4 p-3">
-                  <div className="bg-[#7A51E3] w-7 text-center rounded-sm inline-block mt-2.5">
+                  <button 
+                  onClick={() => {
+                    setShowModalAdd(true);
+                  }}
+                  className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5">
                     <i className="fa-solid fa-plus text-white"></i>
-                  </div>
-
+                  </button>
+                  
                   <div className="float-right">
                     <input
                       type="search"
@@ -30,115 +36,313 @@ const Promo = () => {
                       name="username"
                       id="username"
                       autoComplete="off"
-                      className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] focus:ring-2 focus:ring-inset focus:ring-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
+                      className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
                     />
-
-                    <Filter />
+                  <Filter />
                   </div>
                 </div>
 
-                <table className="main-w-full border-gray-300 shadow-md">
-                  <thead>
-                    <tr className="text-white">
-                      <th className="py-2 px-5 border-b bg-violet-800">ID</th>
-                      <th className="py-2 px-10 border-b bg-violet-800">
-                        Nama
+                <table className="w-full text-sm text-left rtl:text-right">
+                  <thead className="text-xs text-white">
+                    <tr className="bg-[#7A51E3]">
+                      <th scope="col" className="px-6 py-3 text-center">
+                        ID
                       </th>
-                      <th className="py-2 px-10 border-b bg-violet-800">
+                      <th scope="col" className="px-6 py-3 text-center">
+                        Nama Promo 
+                      </th>
+                      <th scope="col" className="px-6 py-3 text-center">
                         Gambar
                       </th>
-                      <th className="py-2 px-10 border-b bg-violet-800">
+                      <th scope="col" className="px-6 py-3 text-center">
                         Waktu Mulai
                       </th>
-                      <th className="py-2 px-10 border-b bg-violet-800">
-                        Waktu Sampai
+                      <th scope="col" className="px-6 py-3 text-center">
+                        Waktu Berakhir 
                       </th>
-                      <th className="py-2 px-10 border-b bg-violet-800">
+                      <th scope="col" className="px-6 py-3 text-center">
                         Kriteria
                       </th>
-                      <th className="py-2 px-10 border-b bg-violet-800">
+                      <th scope="col" className="px-6 py-3 text-center">
                         Action
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td className="py-2 px-5 border-b text-black">1</td>
-                      <td className="py-2 px-10 border-b text-black">10.10</td>
-                      <td className="py-2 px-10 border-b text-black">
-                        <img src={voucher} />
+                    <tr className="border-b">
+                      <td className="text-center px-6 py-4">
+                        <span>001</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-black text-center">
-                        10/10/2023
+                      <td className="text-center px-6 py-4">
+                        <span>Promo 12.12</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-black text-center">
-                        20/10/2023
+                      <td className="text-center px-6 py-4">
+                        <img
+                          src="/src/img/promo.png"
+                          alt="Users"
+                          className=" mx-auto"
+                        />
                       </td>
-                      <td className="py-2 px-10 border-b text-black">
-                        Diskon 5% untuk pembelian <br />
-                        paket product launching
+                      <td className="text-center px-6 py-4">
+                        <span>10/12/2023</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-violet-800 text-center">
-                        Edit
+                      <td className="text-center px-6 py-4">
+                        <span>22/12/2023</span>
                       </td>
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td className="py-2 px-5 border-b text-black">2</td>
-                      <td className="py-2 px-10 border-b text-black">10.10</td>
-                      <td className="py-2 px-10 border-b text-black">
-                        <img src={voucher} />
+                      <td className="text-center px-6 py-4">
+                        <span>Diskon 5% untuk <br /> pembelian paket <br /> product launching</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-black text-center">
-                        10/10/2023
-                      </td>
-                      <td className="py-2 px-10 border-b text-black text-center">
-                        20/10/2023
-                      </td>
-                      <td className="py-2 px-10 border-b text-black">
-                        Diskon 5% untuk pembelian <br />
-                        paket product launching
-                      </td>
-                      <td className="py-2 px-10 border-b text-violet-800 text-center">
-                        Edit
+                      <td className="text-center px-6 py-4">
+                        <a href="#" className="text-indigo-600">
+                          Edit
+                        </a>
                       </td>
                     </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td className="py-2 px-5 border-b text-black">3</td>
-                      <td className="py-2 px-10 border-b text-black">10.10</td>
-                      <td className="py-2 px-10 border-b text-black">
-                        <img src={voucher} />
+                    <tr className="border-b">
+                      <td className="text-center px-6 py-4">
+                        <span>002</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-black text-center">
-                        10/10/2023
+                      <td className="text-center px-6 py-4">
+                        <span>Promo 12.12</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-black text-center">
-                        20/10/2023
+                      <td className="text-center px-6 py-4">
+                        <img
+                          src="/src/img/promo.png"
+                          alt="Users"
+                          className=" mx-auto"
+                        />
                       </td>
-                      <td className="py-2 px-10 border-b text-black">
-                        Diskon 5% untuk pembelian <br />
-                        paket product launching
+                      <td className="text-center px-6 py-4">
+                        <span>10/12/2023</span>
                       </td>
-                      <td className="py-2 px-10 border-b text-violet-800 text-center">
-                        Edit
+                      <td className="text-center px-6 py-4">
+                        <span>22/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Diskon 5% untuk <br /> pembelian paket <br /> product launching</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <a href="#" className="text-indigo-600">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="text-center px-6 py-4">
+                        <span>003</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Promo 12.12</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <img
+                          src="/src/img/promo.png"
+                          alt="Users"
+                          className=" mx-auto"
+                        />
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>10/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>22/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Diskon 5% untuk <br /> pembelian paket <br /> product launching</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <a href="#" className="text-indigo-600">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="text-center px-6 py-4">
+                        <span>004</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Promo 12.12</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <img
+                          src="/src/img/promo.png"
+                          alt="Users"
+                          className=" mx-auto"
+                        />
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>10/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>22/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Diskon 5% untuk <br /> pembelian paket <br /> product launching</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <a href="#" className="text-indigo-600">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="text-center px-6 py-4">
+                        <span>005</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Promo 12.12</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <img
+                          src="/src/img/promo.png"
+                          alt="Users"
+                          className=" mx-auto"
+                        />
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>10/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>22/12/2023</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>Diskon 5% untuk <br /> pembelian paket <br /> product launching</span>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <a href="#" className="text-indigo-600">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="border">
+                      <td className="px-6 py-4" colSpan="3">
+                        <div className="">
+                          <button
+                            type="button"
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
+                            Previous
+                          </button>
+                          <button
+                            type="button"
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
+                            Next
+                          </button>
+                        </div>
+                      </td>
+
+                      <td className="text-right px-6 py-4">
+                        <span>Page 1 of 10</span>
                       </td>
                     </tr>
                   </tbody>
                 </table>
-                <div className="my-5 float-right">
-                  <span className="mr-14">1 of 10</span>
-                  <span className="mr-20">
-                    <a href="#">&lt;</a>
-                  </span>
-                  <span className="mr-5">
-                    <a href="#">&gt;</a>
-                  </span>
-                </div>
               </div>
             </section>
+
+            {showModalAdd && (
+              <Modal>
+                <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
+
+                <button className="float-right px-2 py-2"
+                onClick={() => setShowModalAdd(false)}>
+                <i className="fa fa-close"></i>
+                </button>
+
+                  <h2 className="text-3xl font-bold text-[#7A51E3] mb-10 mt-8">
+                    Tambah Promo
+                  </h2>
+
+                  <div className="form mb-16">
+                  <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Nama
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          placeholder="Masukan Nama Promo"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4 ">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-8">
+                        Masukan Gambar
+                      </label>
+                      <div className="mt-2">
+                      <label className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
+                        Choose File
+                      </label>
+                    </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Waktu Mulai
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          placeholder="Masukan Waktu Mulai"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Waktu Berakhir
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          placeholder="Masukan Waktu Berakhir"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Kriteria 
+                        <p className="text-italic text-sm ">* Bisa masukan lebih dari satu</p>
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          placeholder="Masukan Kriteria"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                  <div className="w-full">
+                    <button
+                      type="button"
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
+                      onClick={() => setShowModalAdd(false)}>
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+                </div>
+              </Modal>
+            )}
+
           </main>
         </div>
       </div>

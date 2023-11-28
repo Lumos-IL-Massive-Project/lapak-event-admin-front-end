@@ -186,17 +186,28 @@ function Notifikasi() {
                         </a>
                       </td>
                     </tr>
+                    <tr className="border">
+                      <td className="px-6 py-4" colSpan="3">
+                        <div className="">
+                          <button
+                            type="button"
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
+                            Previous
+                          </button>
+                          <button
+                            type="button"
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
+                            Next
+                          </button>
+                        </div>
+                      </td>
+
+                      <td className="text-right px-6 py-4">
+                        <span>Page 1 of 10</span>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
-                <div className="my-5 float-right">
-                  <span className="mr-14">1 of 10</span>
-                  <span className="mr-20">
-                    <a href="#">&lt;</a>
-                  </span>
-                  <span className="mr-5">
-                    <a href="#">&gt;</a>
-                  </span>
-                </div>
               </div>
             </section>
           </main>{" "}
