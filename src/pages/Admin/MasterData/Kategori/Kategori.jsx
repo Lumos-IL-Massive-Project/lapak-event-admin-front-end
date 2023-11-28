@@ -5,6 +5,10 @@ import Modal from "../../../../components/Modal";
 
 const Kategori = () => {
   const [showModalAdd, setShowModalAdd] = useState(false);
+  const handleFileChange = (event) => {
+    const fileName = event.target.files[0].name;
+    alert(`Selected file: ${fileName}`);
+  };
 
   return (
     <div className="bg-[#DDE5E9]">
@@ -187,9 +191,12 @@ const Kategori = () => {
                         Masukan Gambar
                       </label>
                       <div className="mt-2">
-                      <label className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
+                      <label 
+                      htmlFor="fileInput"
+                      className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
                         Choose File
                       </label>
+                      <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
                     </div>
                     </div>
                     </div>
