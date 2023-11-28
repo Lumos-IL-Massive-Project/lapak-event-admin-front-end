@@ -111,14 +111,9 @@ const Kategori = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <button
-                          onClick={() => {
-                            setEditModal(true);
-                          }}
-                          className="text-[#7A51E3]"
-                        >
+                        <a href="#" className="text-indigo-600">
                           Edit
-                        </button>
+                        </a>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -136,14 +131,9 @@ const Kategori = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <button
-                          onClick={() => {
-                            setEditModal(true);
-                          }}
-                          className="text-[#7A51E3]"
-                        >
+                        <a href="#" className="text-indigo-600">
                           Edit
-                        </button>
+                        </a>
                       </td>
                     </tr>
                     <tr className="border">
@@ -215,7 +205,7 @@ const Kategori = () => {
                       </label>
                       <div className="mt-2">
                         <div className="ml-48">
-                          <button>
+                          <button >
                             <i className="fa fa-close"></i>
                           </button>
                         </div>
