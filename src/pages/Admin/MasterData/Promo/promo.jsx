@@ -286,6 +286,11 @@ const Promo = () => {
                         Choose File
                       </label>
                       <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
+<<<<<<< HEAD
+=======
+                      <div className="mt-2">
+                    </div>
+>>>>>>> 0c1c9f4b1910f3e210fed3fdcc959dbe925969b4
                     </div>
                     </div>
                     <div className="sm:col-span-3 mb-4">
