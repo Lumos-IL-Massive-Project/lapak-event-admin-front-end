@@ -286,11 +286,6 @@ const Promo = () => {
                         Choose File
                       </label>
                       <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
-                      <div className="mt-2">
-                      <label className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
-                        Choose File
-                      </label>
-                    </div>
                     </div>
                     </div>
                     <div className="sm:col-span-3 mb-4">
