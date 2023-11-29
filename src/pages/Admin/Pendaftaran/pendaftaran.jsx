@@ -89,8 +89,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
@@ -121,8 +119,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
@@ -153,8 +149,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
@@ -185,8 +179,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
@@ -217,8 +209,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
@@ -249,8 +239,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
@@ -281,8 +269,6 @@ const Pendaftaran = () => {
                             className="text-yellow-500">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
-                          <span className="text-[#7A51E3]">Edit</span>
                         </div>
                       </td>
                     </tr>
