@@ -45,10 +45,13 @@ function Notifikasi() {
                         ID
                       </th>
                       <th scope="col" className="px-6 py-3 text-center">
-                        Waktu
+                        Judul Notifikasi
                       </th>
                       <th scope="col" className="px-6 py-3 text-center">
                         Info
+                      </th>
+                      <th scope="col" className="px-6 py-3 text-center">
+                        Tanggal 
                       </th>
                       <th scope="col" className="px-6 py-3 text-center">
                         Action
@@ -58,16 +61,19 @@ function Notifikasi() {
                   <tbody>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>1</span>
+                        <span>011</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Des, 21, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -82,16 +88,19 @@ function Notifikasi() {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>2</span>
+                        <span>002</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Nov, 07, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -106,16 +115,19 @@ function Notifikasi() {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>3</span>
+                        <span>003</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Sept, 03, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -130,16 +142,19 @@ function Notifikasi() {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>4</span>
+                        <span>004</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Agus, 25, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -154,16 +169,19 @@ function Notifikasi() {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>5</span>
+                        <span>005</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Des, 21, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -178,16 +196,19 @@ function Notifikasi() {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>7</span>
+                        <span>007</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Agus, 07, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -202,16 +223,19 @@ function Notifikasi() {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>8</span>
+                        <span>008</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>Jun, 21, 2023</span>
+                        <span>Perayaan Hari Raya</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <p>
                           Ada vendor Wedding Planning yang Anda idam-idamkan?
                           Yuk, intip beragam pilihannya di sini!
                         </p>
+                      </td>
+                      <td className="text-center px-6 py-4">
+                        <span>11-05-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <button
@@ -250,6 +274,7 @@ function Notifikasi() {
                 </table>
               </div>
             </section>
+            
             {editModal && (
               <Modal>
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">

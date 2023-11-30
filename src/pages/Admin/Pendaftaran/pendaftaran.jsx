@@ -64,7 +64,7 @@ const Pendaftaran = () => {
                   <tbody>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>1</span>
+                        <span>001</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Piyorin</span>
@@ -94,7 +94,7 @@ const Pendaftaran = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>2</span>
+                        <span>002</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Kazuto</span>
@@ -124,7 +124,7 @@ const Pendaftaran = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>3</span>
+                        <span>003</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Kayaka</span>
@@ -154,7 +154,7 @@ const Pendaftaran = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>4</span>
+                        <span>004</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Vampix</span>
@@ -184,7 +184,7 @@ const Pendaftaran = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>5</span>
+                        <span>005</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Aquane</span>
@@ -214,7 +214,7 @@ const Pendaftaran = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>6</span>
+                        <span>006</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Fitriana</span>
@@ -244,7 +244,7 @@ const Pendaftaran = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>7</span>
+                        <span>007</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Risna</span>

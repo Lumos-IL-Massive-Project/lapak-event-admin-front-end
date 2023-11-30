@@ -13,7 +13,7 @@ const DropdownButton = () => {
         isOpen ? "block" : "hidden"
       }`}>
       <div className="mx-5 mt-5 mb-3 head">
-        <h6 className="text-xl font-bold text-[#7A51E3]">Produk</h6>
+        <h6 className="text-xl font-bold text-[#7A51E3]">Promo</h6>
       </div>
       <div className="body mx-5 mb-5">
         <span className="text-lg font-semibold">Urutkan Berdasarkan</span>
@@ -50,7 +50,7 @@ const DropdownButton = () => {
             <ul>
               <li className="mb-1">
                 <input type="radio" name="" id="idNaik" className="mr-1" />
-                <label htmlFor="idNaik">Naik</label>
+                <label htmlFor="idNaik">Turun</label>
               </li>
               <li className="mb-1">
                 <input type="radio" name="" id="promoAz" className="mr-1" />
@@ -62,7 +62,7 @@ const DropdownButton = () => {
               </li>
               <li className="mb-1">
                 <input type="radio" name="" id="idNaik" className="mr-1" />
-                <label htmlFor="idNaik">Naik</label>
+                <label htmlFor="idNaik">Turun</label>
               </li>
             </ul>
           </div>

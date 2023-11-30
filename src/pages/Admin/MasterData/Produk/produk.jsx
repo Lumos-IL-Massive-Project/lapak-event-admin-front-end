@@ -67,7 +67,7 @@ const Kategori = () => {
                   <tbody>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>1</span>
+                        <span>001</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Product Launching for Company</span>
@@ -105,7 +105,7 @@ const Kategori = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>2</span>
+                        <span>002</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Product Launching for Company</span>
@@ -143,7 +143,7 @@ const Kategori = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>3</span>
+                        <span>003</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Product Launching for Company</span>
@@ -181,7 +181,7 @@ const Kategori = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>4</span>
+                        <span>004</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Product Launching for Company</span>
@@ -219,7 +219,7 @@ const Kategori = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>5</span>
+                        <span>005</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Product Launching for Company</span>

@@ -90,10 +90,10 @@ const Promo = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>10/12/2023</span>
+                        <span>10-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>22/12/2023</span>
+                        <span>22-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>
@@ -127,10 +127,10 @@ const Promo = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>10/12/2023</span>
+                        <span>10-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>22/12/2023</span>
+                        <span>22-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>
@@ -164,10 +164,10 @@ const Promo = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>10/12/2023</span>
+                        <span>10-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>22/12/2023</span>
+                        <span>22-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>
@@ -201,10 +201,10 @@ const Promo = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>10/12/2023</span>
+                        <span>10-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>22/12/2023</span>
+                        <span>22-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>
@@ -238,10 +238,10 @@ const Promo = () => {
                         />
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>10/12/2023</span>
+                        <span>10-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <span>22/12/2023</span>
+                        <span>22-12-2023</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>

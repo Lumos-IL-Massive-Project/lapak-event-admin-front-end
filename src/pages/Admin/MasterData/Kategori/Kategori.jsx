@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SideBar from "../../../../components/SideBar";
 import Navbar from "../../../../components/Navbar";
 import Modal from "../../../../components/Modal";
+import Filter1 from "../../../../components/Filter1"
 
 const Kategori = () => {
   const [showModalAdd, setShowModalAdd] = useState(false);
@@ -44,12 +45,8 @@ const Kategori = () => {
                       className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
                     />
 
-                    <button
-                      type="button"
-                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]"
-                    >
-                      <i className="fa-solid fa-filter mr-2"></i> Filter
-                    </button>
+                    <Filter1 />
+                    
                   </div>
                 </div>
 
@@ -73,7 +70,7 @@ const Kategori = () => {
                   <tbody>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>1</span>
+                        <span>001</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Pernikahan</span>
@@ -98,7 +95,7 @@ const Kategori = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>2</span>
+                        <span>002</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Ulang tahun</span>
@@ -118,7 +115,7 @@ const Kategori = () => {
                     </tr>
                     <tr className="border-b">
                       <td className="text-center px-6 py-4">
-                        <span>3</span>
+                        <span>003</span>
                       </td>
                       <td className="text-center px-6 py-4">
                         <span>Seminar</span>
