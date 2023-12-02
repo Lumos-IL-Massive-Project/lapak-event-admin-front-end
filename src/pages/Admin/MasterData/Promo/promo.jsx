@@ -30,8 +30,7 @@ const Promo = () => {
                     onClick={() => {
                       setShowModalAdd(true);
                     }}
-                    className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5"
-                  >
+                    className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5">
                     <i className="fa-solid fa-plus text-white"></i>
                   </button>
 
@@ -106,8 +105,7 @@ const Promo = () => {
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -143,8 +141,7 @@ const Promo = () => {
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -180,8 +177,7 @@ const Promo = () => {
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -217,8 +213,7 @@ const Promo = () => {
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -254,31 +249,28 @@ const Promo = () => {
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
                     </tr>
                     <tr className="border">
-                      <td className="px-6 py-4" colSpan="3">
+                      <td className="px-6 py-4" colSpan="5">
                         <div className="">
                           <button
                             type="button"
-                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]"
-                          >
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
                             Previous
                           </button>
                           <button
                             type="button"
-                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]"
-                          >
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
                             Next
                           </button>
                         </div>
                       </td>
 
-                      <td className="text-right px-6 py-4">
+                      <td className="text-right px-6 py-4" colSpan={2}>
                         <span>Page 1 of 10</span>
                       </td>
                     </tr>
@@ -292,8 +284,7 @@ const Promo = () => {
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
                   <button
                     className="float-right px-2 py-2"
-                    onClick={() => setEditModal(false)}
-                  >
+                    onClick={() => setEditModal(false)}>
                     <i className="fa fa-close"></i>
                   </button>
 
@@ -305,8 +296,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Nama
                       </label>
                       <div className="mt-2">
@@ -322,8 +312,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4 ">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-8"
-                      >
+                        className="block text-lg font-medium leading-8">
                         Masukan Gambar
                       </label>
                       <div className="mt-2">
@@ -337,8 +326,7 @@ const Promo = () => {
                       <div className="mt-4">
                         <label
                           htmlFor="fileInput"
-                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4"
-                        >
+                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
                           Choose File
                         </label>
                         <input
@@ -352,8 +340,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Waktu Mulai
                       </label>
                       <div className="mt-2">
@@ -369,8 +356,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Waktu Berakhir
                       </label>
                       <div className="mt-2">
@@ -386,8 +372,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Kriteria
                         <p className="text-italic text-sm ">
                           * Bisa masukan lebih dari satu
@@ -415,8 +400,7 @@ const Promo = () => {
                       <button
                         type="button"
                         className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
-                        onClick={() => setEditModal(false)}
-                      >
+                        onClick={() => setEditModal(false)}>
                         Simpan
                       </button>
                     </div>
@@ -430,8 +414,7 @@ const Promo = () => {
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
                   <button
                     className="float-right px-2 py-2"
-                    onClick={() => setShowModalAdd(false)}
-                  >
+                    onClick={() => setShowModalAdd(false)}>
                     <i className="fa fa-close"></i>
                   </button>
 
@@ -443,8 +426,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Nama
                       </label>
                       <div className="mt-2">
@@ -460,26 +442,28 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4 ">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-8"
-                      >
+                        className="block text-lg font-medium leading-8">
                         Masukan Gambar
                       </label>
                       <div className="mt-2">
-                      <label 
-                      htmlFor="fileInput"
-                      className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
-                        Choose File
-                      </label>
-                      <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
-                      <div className="mt-2">
-                    </div>
-                    </div>
+                        <label
+                          htmlFor="fileInput"
+                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
+                          Choose File
+                        </label>
+                        <input
+                          type="file"
+                          id="fileInput"
+                          className="hidden"
+                          onChange={handleFileChange}
+                        />
+                        <div className="mt-2"></div>
+                      </div>
                     </div>
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Waktu Mulai
                       </label>
                       <div className="mt-2">
@@ -496,8 +480,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Waktu Berakhir
                       </label>
                       <div className="mt-2">
@@ -514,8 +497,7 @@ const Promo = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Kriteria
                         <p className="text-italic text-sm ">
                           * Bisa masukan lebih dari satu
@@ -535,8 +517,7 @@ const Promo = () => {
                       <button
                         type="button"
                         className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
-                        onClick={() => setShowModalAdd(false)}
-                      >
+                        onClick={() => setShowModalAdd(false)}>
                         Tambah
                       </button>
                     </div>

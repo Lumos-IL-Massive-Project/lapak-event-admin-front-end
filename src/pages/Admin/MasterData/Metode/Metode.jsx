@@ -31,8 +31,7 @@ const Metode = () => {
                     onClick={() => {
                       setShowModalAdd(true);
                     }}
-                    className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5"
-                  >
+                    className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5">
                     <i className="fa-solid fa-plus text-white"></i>
                   </button>
 
@@ -48,8 +47,7 @@ const Metode = () => {
 
                     <button
                       type="button"
-                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]"
-                    >
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] dark:text-white [#7A51E3]:border-[#7A51E3] [#7A51E3]:hover:bg-[#7A51E3] dark:focus:ring-[#7A51E3]">
                       <i className="fa-solid fa-filter mr-2"></i> Filter
                     </button>
                   </div>
@@ -94,12 +92,11 @@ const Metode = () => {
                         <span>Transfer Bank</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                      <button
+                        <button
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -126,8 +123,7 @@ const Metode = () => {
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -150,12 +146,11 @@ const Metode = () => {
                         <span>Transfer Bank</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                      <button
+                        <button
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -178,12 +173,11 @@ const Metode = () => {
                         <span>Transfer Bank</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                      <button
+                        <button
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -206,12 +200,11 @@ const Metode = () => {
                         <span>Transfer Bank</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                      <button
+                        <button
                           onClick={() => {
                             setEditModal(true);
                           }}
-                          className="text-[#7A51E3]"
-                        >
+                          className="text-[#7A51E3]">
                           Edit
                         </button>
                       </td>
@@ -221,20 +214,18 @@ const Metode = () => {
                         <div className="">
                           <button
                             type="button"
-                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]"
-                          >
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
                             Previous
                           </button>
                           <button
                             type="button"
-                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]"
-                          >
+                            className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]">
                             Next
                           </button>
                         </div>
                       </td>
 
-                      <td className="text-right px-6 py-4">
+                      <td className="text-right px-6 py-4" colSpan={2}>
                         <span>Page 1 of 10</span>
                       </td>
                     </tr>
@@ -248,8 +239,7 @@ const Metode = () => {
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
                   <button
                     className="float-right px-2 py-2"
-                    onClick={() => setEditModal(false)}
-                  >
+                    onClick={() => setEditModal(false)}>
                     <i className="fa fa-close"></i>
                   </button>
 
@@ -261,8 +251,7 @@ const Metode = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Nama Bank
                       </label>
                       <div className="mt-2">
@@ -279,8 +268,7 @@ const Metode = () => {
                     <div className="sm:col-span-3 mb-4 ">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-8"
-                      >
+                        className="block text-lg font-medium leading-8">
                         Masukan Gambar
                       </label>
                       <div className="mt-2">
@@ -294,8 +282,7 @@ const Metode = () => {
                       <div className="mt-4">
                         <label
                           htmlFor="fileInput"
-                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4"
-                        >
+                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
                           Choose File
                         </label>
                         <input
@@ -309,20 +296,17 @@ const Metode = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="cars"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Kategori Pembayaran
                       </label>
                       <div className="mt-2">
                         <div
                           id="cars"
-                          className="block w-full rounded-md py-1.5 pl-3 text-gray-400 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                        >
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-400 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border">
                           <select
                             name="cars"
                             id="cars"
-                            className="block w-full"
-                          >
+                            className="block w-full">
                             <option value="car">Kartu Kredit</option>
                             <option value="bank">Transfer Bank</option>
                             <option value="pay">Instan Payment</option>
@@ -336,8 +320,7 @@ const Metode = () => {
                     <button
                       type="button"
                       className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
-                      onClick={() => setEditModal(false)}
-                    >
+                      onClick={() => setEditModal(false)}>
                       Simpan
                     </button>
                   </div>
@@ -350,8 +333,7 @@ const Metode = () => {
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
                   <button
                     className="float-right px-2 py-2"
-                    onClick={() => setShowModalAdd(false)}
-                  >
+                    onClick={() => setShowModalAdd(false)}>
                     <i className="fa fa-close"></i>
                   </button>
 
@@ -363,8 +345,7 @@ const Metode = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Nama
                       </label>
                       <div className="mt-2">
@@ -380,15 +361,13 @@ const Metode = () => {
                     <div className="sm:col-span-3 mb-4 ">
                       <label
                         htmlFor="nama"
-                        className="block text-lg font-medium leading-8"
-                      >
+                        className="block text-lg font-medium leading-8">
                         Masukan Gambar
                       </label>
                       <div className="mt-2">
                         <label
                           htmlFor="fileInput"
-                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4"
-                        >
+                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
                           Choose File
                         </label>
                         <input
@@ -402,20 +381,17 @@ const Metode = () => {
                     <div className="sm:col-span-3 mb-4">
                       <label
                         htmlFor="cars"
-                        className="block text-lg font-medium leading-6"
-                      >
+                        className="block text-lg font-medium leading-6">
                         Kategori Pembayaran
                       </label>
                       <div className="mt-2">
                         <div
                           id="cars"
-                          className="block w-full rounded-md py-1.5 pl-3 text-gray-400 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
-                        >
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-400 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border">
                           <select
                             name="cars"
                             id="cars"
-                            className="block w-full"
-                          >
+                            className="block w-full">
                             <option value="list">
                               Pilih Kategori Pembayaran
                             </option>
@@ -432,8 +408,7 @@ const Metode = () => {
                     <button
                       type="button"
                       className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
-                      onClick={() => setShowModalAdd(false)}
-                    >
+                      onClick={() => setShowModalAdd(false)}>
                       Tambah
                     </button>
                   </div>

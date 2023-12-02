@@ -273,7 +273,7 @@ const Pendaftaran = () => {
                       </td>
                     </tr>
                     <tr className="border">
-                      <td className="px-6 py-4" colSpan="3">
+                      <td className="px-6 py-4" colSpan="4">
                         <div className="">
                           <button
                             type="button"
@@ -288,7 +288,7 @@ const Pendaftaran = () => {
                         </div>
                       </td>
 
-                      <td className="text-right px-6 py-4">
+                      <td className="text-right px-6 py-4" colSpan={2}>
                         <span>Page 1 of 10</span>
                       </td>
                     </tr>
@@ -300,8 +300,13 @@ const Pendaftaran = () => {
             {showModal && (
               <Modal>
                 <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
+                  <button
+                    className="float-right px-2 py-2"
+                    onClick={() => setShowModal(false)}>
+                    <i className="fa fa-close"></i>
+                  </button>
                   <h2 className="text-3xl font-bold text-[#7A51E3] mb-10">
-                    Detail Produk
+                    Detail Pendaftaran
                   </h2>
 
                   <div className="form  mb-16">
