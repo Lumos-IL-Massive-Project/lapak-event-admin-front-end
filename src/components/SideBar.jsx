@@ -100,6 +100,36 @@ const SideBar = () => {
                     Metode
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/admin/bank"
+                    className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
+                      "/admin/bank"
+                    )}`}>
+                    <i className="fa fa-bank"></i>
+                    Bank 
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/admin/kota"
+                    className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
+                      "/admin/kota"
+                    )}`}>
+                    <i className="fas fa-city"></i>
+                    Kota 
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/admin/provinsi"
+                    className={`ml-3 py-1 pl-2 pr-1 mt-2 rounded w-18 flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold ${isLinkActive(
+                      "/admin/provinsi"
+                    )}`}>
+                    <i className="fa-solid fa-bars-progress"></i>
+                    Provinsi
+                  </Link>
+                </li>
               </ul>
             </ul>
             <li>
