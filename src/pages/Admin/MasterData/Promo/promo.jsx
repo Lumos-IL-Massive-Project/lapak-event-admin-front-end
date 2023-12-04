@@ -25,7 +25,7 @@ const Promo = () => {
 
             <section>
               <div className="relative shadow-md sm:rounded-lg border overflow-hidden">
-                <div className="mb-4 p-3">
+                <div className="mb-2 p-3">
                   <button
                     onClick={() => {
                       setShowModalAdd(true);
@@ -41,9 +41,8 @@ const Promo = () => {
                       name="username"
                       id="username"
                       autoComplete="off"
-                      className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] sm:text-sm sm:leading-6 w-50 mr-2"
+                      className="rounded-md border border-[#7A51E3] py-1.5 pl-3 text-[#7A51E3] placeholder:text-[#7A51E3] sm:text-sm sm:leading-6 w-60 mr-2"
                     />
-                    <Filter />
                   </div>
                 </div>
 
