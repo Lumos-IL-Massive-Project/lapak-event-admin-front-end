@@ -14,7 +14,7 @@ const Pendaftaran = () => {
           <Navbar />
           <main className="container mx-auto bg-white p-8">
             <section className="mb-7">
-              <h2 className="text-3xl font-bold text-[#7A51E3]">Pendaftaran</h2>
+              <h2 className="text-3xl font-bold text-[#7A51E3]">Pendaftaran EO</h2>
             </section>
 
             <section>
