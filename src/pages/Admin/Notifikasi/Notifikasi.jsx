@@ -4,7 +4,13 @@ import Navbar from "../../../components/Navbar";
 import Modal from "../../../components/Modal";
 
 function Notifikasi() {
+  const [showModalAdd, setShowModalAdd] = useState(false);
   const [editModal, setEditModal] = useState(false);
+  const handleFileChange = (event) => {
+    const fileName = event.target.files[0].name;
+    alert(`Selected file: ${fileName}`);
+  };
+
   return (
     <div className="bg-[#DDE5E9]">
       <div className="flex flex-row ">
@@ -19,6 +25,14 @@ function Notifikasi() {
             <section>
               <div className="relative shadow-md sm:rounded-lg border overflow-hidden">
                 <div className="mb-5 p-3">
+                  <button
+                    onClick={() => {
+                      setShowModalAdd(true);
+                    }}
+                    className="bg-[#5925DC] hover:bg-[#4f388f] w-7 text-center rounded-sm inline-block mt-2.5">
+                    <i className="fa-solid fa-plus text-white"></i>
+                  </button>
+
                   <div className="float-right mb-2">
                     <input
                       type="search"
@@ -320,7 +334,84 @@ function Notifikasi() {
                 </div>
               </Modal>
             )}
-          </main>{" "}
+
+            {showModalAdd && (
+              <Modal>
+                <div className="max-w-2xl relative w-full p-16 mx-auto bg-white rounded-md shadow-lg">
+                  <button
+                    className="float-right px-2 py-2"
+                    onClick={() => setShowModalAdd(false)}>
+                    <i className="fa fa-close"></i>
+                  </button>
+
+                  <h2 className="text-3xl font-bold text-[#7A51E3] mb-10 mt-8">
+                    Tambah Notifikasi
+                  </h2>
+
+                  <div className="form mb-16">
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Judul Notifikasi
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          placeholder="Masukan Nama Notifikasi"
+                          name="nama"
+                          id="nama"
+                          autoComplete="off"
+                          className="block w-full rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4 ">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-8">
+                        Masukan Gambar
+                      </label>
+                      <div className="mt-2">
+                        <label
+                          htmlFor="fileInput"
+                          className="cursor-pointer text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border py-2 px-4 rounded my-4">
+                          Choose File
+                        </label>
+                        <input
+                          type="file"
+                          id="fileInput"
+                          className="hidden"
+                          onChange={handleFileChange}
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-3 mb-4">
+                      <label
+                        htmlFor="nama"
+                        className="block text-lg font-medium leading-6">
+                        Pesan Notifikasi
+                      </label>
+                      <div className="mt-2">
+                        <textarea
+                          name="deskripssi"
+                          id="deskripsi"
+                          readOnly
+                          className="block w-full h-32 rounded-md py-1.5 pl-3 text-gray-700 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border-[#7A51E3] border"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <button
+                      type="button"
+                      className="text-white bg-[#7A51E3] border focus:outline-none hover:bg-[#7A51E3] focus:ring-4 focus:ring-[#7A51E3] font-medium rounded-lg text-sm px-4 py-2.5 me-2 mb-2 [#7A51E3]:bg-[#7A51E3] [#7A51E3]:text-white [#7A51E3]:border-[#7A51E3] dark:hover:bg-[#7A51E3] [#7A51E3]:focus:ring-[#7A51E3] float-right"
+                      onClick={() => setShowModalAdd(false)}>
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </Modal>
+            )}
+          </main>
         </div>
       </div>
     </div>
