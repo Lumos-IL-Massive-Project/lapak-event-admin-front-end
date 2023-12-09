@@ -5,6 +5,7 @@ import Modal from "../../../../components/Modal";
 
 const Kota = () => {
   const [showModalAdd, setShowModalAdd] = useState(false);
+  const [showDeleteModal, setshowDeleteModal] = useState(false);
   const [editModal, setEditModal] = useState(false);
 
   return (
@@ -69,17 +70,21 @@ const Kota = () => {
                         <span>Jawa Barat</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-[#7A51E3]">
+                          Edit
+                        </button>
+                        <span className="mx-1">|</span>
+                        <button
+                          onClick={() => {
+                            setshowDeleteModal(true);
+                          }}
+                          className="text-red-500">
+                          Hapus
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -93,17 +98,21 @@ const Kota = () => {
                         <span>Kepulauan Riau</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-[#7A51E3]">
+                          Edit
+                        </button>
+                        <span className="mx-1">|</span>
+                        <button
+                          onClick={() => {
+                            setshowDeleteModal(true);
+                          }}
+                          className="text-red-500">
+                          Hapus
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -117,17 +126,21 @@ const Kota = () => {
                         <span>Sumatera Utara</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-[#7A51E3]">
+                          Edit
+                        </button>
+                        <span className="mx-1">|</span>
+                        <button
+                          onClick={() => {
+                            setshowDeleteModal(true);
+                          }}
+                          className="text-red-500">
+                          Hapus
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -141,17 +154,21 @@ const Kota = () => {
                         <span>Jawa Barat</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-[#7A51E3]">
+                          Edit
+                        </button>
+                        <span className="mx-1">|</span>
+                        <button
+                          onClick={() => {
+                            setshowDeleteModal(true);
+                          }}
+                          className="text-red-500">
+                          Hapus
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -165,17 +182,21 @@ const Kota = () => {
                         <span>DKI Jakarta</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-[#7A51E3]">
+                          Edit
+                        </button>
+                        <span className="mx-1">|</span>
+                        <button
+                          onClick={() => {
+                            setshowDeleteModal(true);
+                          }}
+                          className="text-red-500">
+                          Hapus
+                        </button>
                       </td>
                     </tr>
                     <tr className="border">
@@ -318,6 +339,33 @@ const Kota = () => {
                       onClick={() => setShowModalAdd(false)}>
                       Tambah
                     </button>
+                  </div>
+                </div>
+              </Modal>
+            )}
+
+            {showDeleteModal && (
+              <Modal>
+                <div className="max-w-lg relative w-full px-9 pt-9 pb-4 mx-auto bg-white rounded-md shadow-lg">
+                  <div className="w-full">
+                    <h2 className="font-semibold text-lg mb-3">
+                      Yakin mau menghapus data?
+                    </h2>
+
+                    <div className="w-full text-right">
+                      <button
+                        type="button"
+                        className="text-white bg-[#d43a3a] border border-[#d43a3a] focus:outline-none hover:bg-[#a13c3c] focus:ring-4 ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+                        onClick={() => setshowDeleteModal(false)}>
+                        Hapus
+                      </button>
+                      <button
+                        type="button"
+                        className="text-white bg-[#7A51E3] border border-[#7A51E3] focus:outline-none hover:bg-[#4d3591] focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:text-white dark:hover:bg-[#7A51EB] dark:focus:ring-[#7A51E3]"
+                        onClick={() => setshowDeleteModal(false)}>
+                        Batal
+                      </button>
+                    </div>
                   </div>
                 </div>
               </Modal>
