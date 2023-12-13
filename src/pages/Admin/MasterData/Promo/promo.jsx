@@ -106,15 +106,14 @@ const Promo = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
-                          </button>
-                          <span className="mx-1">|</span>
+                          </button>{" "}
                           <button
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300 ">
                             Hapus
                           </button>
                         </div>
@@ -152,15 +151,14 @@ const Promo = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
-                          </button>
-                          <span className="mx-1">|</span>
+                          </button>{" "}
                           <button
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300 ">
                             Hapus
                           </button>
                         </div>
@@ -198,15 +196,14 @@ const Promo = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
-                          </button>
-                          <span className="mx-1">|</span>
+                          </button>{" "}
                           <button
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300 ">
                             Hapus
                           </button>
                         </div>
@@ -244,15 +241,14 @@ const Promo = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
-                          </button>
-                          <span className="mx-1">|</span>
+                          </button>{" "}
                           <button
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300 ">
                             Hapus
                           </button>
                         </div>
@@ -290,15 +286,14 @@ const Promo = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
-                          </button>
-                          <span className="mx-1">|</span>
+                          </button>{" "}
                           <button
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300 ">
                             Hapus
                           </button>
                         </div>

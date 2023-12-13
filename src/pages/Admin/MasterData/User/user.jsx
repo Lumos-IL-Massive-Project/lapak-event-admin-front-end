@@ -88,25 +88,20 @@ const User = () => {
                         <span>EO</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setShowModal(true);
-                              }}
-                              className="text-yellow-500">
-                              Detail
-                            </button>
-                            <span> | </span>
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setShowModal(true);
+                          }}
+                          className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200">
+                          Detail
+                        </button>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
+                          Edit
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -129,25 +124,20 @@ const User = () => {
                         <span>Customer</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setShowModal(true);
-                              }}
-                              className="text-yellow-500">
-                              Detail
-                            </button>
-                            <span> | </span>
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setShowModal(true);
+                          }}
+                          className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200">
+                          Detail
+                        </button>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
+                          Edit
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -170,19 +160,20 @@ const User = () => {
                         <span>EO</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setShowModal(true);
-                              }}
-                              className="text-yellow-500">
-                              Detail
-                            </button>
-                            <span> | </span>
-                            Edit
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setShowModal(true);
+                          }}
+                          className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200">
+                          Detail
+                        </button>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
+                          Edit
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -205,25 +196,20 @@ const User = () => {
                         <span>Customer</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setShowModal(true);
-                              }}
-                              className="text-yellow-500">
-                              Detail
-                            </button>
-                            <span> | </span>
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setShowModal(true);
+                          }}
+                          className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200">
+                          Detail
+                        </button>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
+                          Edit
+                        </button>
                       </td>
                     </tr>
                     <tr className="border-b">
@@ -246,25 +232,20 @@ const User = () => {
                         <span>EO</span>
                       </td>
                       <td className="text-center px-6 py-4">
-                        <a href="#" className="text-indigo-600">
-                          <p className="text-[#7A51E3]">
-                            <button
-                              onClick={() => {
-                                setShowModal(true);
-                              }}
-                              className="text-yellow-500">
-                              Detail
-                            </button>
-                            <span> | </span>
-                            <button
-                              onClick={() => {
-                                setEditModal(true);
-                              }}
-                              className="text-[#7A51E3]">
-                              Edit
-                            </button>
-                          </p>
-                        </a>
+                        <button
+                          onClick={() => {
+                            setShowModal(true);
+                          }}
+                          className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200">
+                          Detail
+                        </button>
+                        <button
+                          onClick={() => {
+                            setEditModal(true);
+                          }}
+                          className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
+                          Edit
+                        </button>
                       </td>
                     </tr>
                     <tr className="border">

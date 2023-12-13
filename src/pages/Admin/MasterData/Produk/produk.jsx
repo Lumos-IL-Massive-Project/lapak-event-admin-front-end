@@ -54,7 +54,7 @@ const Kategori = () => {
                       </th>
                       <th
                         scope="col"
-                        className="px-6 py-3 text-center  w-32"
+                        className="px-6 py-3 text-center w-48"
                         nowrap>
                         Action
                       </th>
@@ -83,15 +83,14 @@ const Kategori = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -119,15 +118,14 @@ const Kategori = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -155,15 +153,14 @@ const Kategori = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -191,15 +188,14 @@ const Kategori = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -227,15 +223,14 @@ const Kategori = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#6941ce] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>

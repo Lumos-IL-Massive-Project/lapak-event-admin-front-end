@@ -85,15 +85,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>
@@ -123,15 +122,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>{" "}
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>
@@ -161,15 +159,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>
@@ -199,15 +196,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>
@@ -237,15 +233,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>
@@ -275,15 +270,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>
@@ -313,15 +307,14 @@ const Pendaftaran = () => {
                             onClick={() => {
                               setShowModal(true);
                             }}
-                            className="text-yellow-500">
+                            className="bg-[#e6e946] border border-[#c4bb3d] focus:outline-none hover:bg-[#d8cf4e] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-yellow-200 focus:shadow-outline-yellow ring-yellow-200 ">
                             Detail
                           </button>
-                          <span className="mx-1">|</span>
                           <button
                             onClick={() => {
                               setshowDeleteModal(true);
                             }}
-                            className="text-red-500">
+                            className="text-white bg-[#e35151] border border-[#a83434] focus:outline-none hover:bg-[#913535] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 ring-red-300">
                             Hapus
                           </button>
                         </div>

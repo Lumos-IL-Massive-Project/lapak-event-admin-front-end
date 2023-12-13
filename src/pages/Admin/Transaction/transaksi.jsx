@@ -72,7 +72,7 @@ const Transaction = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#7A51E3] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -97,7 +97,7 @@ const Transaction = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#7A51E3] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -122,7 +122,7 @@ const Transaction = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#7A51E3] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -147,7 +147,7 @@ const Transaction = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#7A51E3] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -172,7 +172,7 @@ const Transaction = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#7A51E3] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
@@ -197,7 +197,7 @@ const Transaction = () => {
                             onClick={() => {
                               setEditModal(true);
                             }}
-                            className="text-[#7A51E3]">
+                            className="text-white bg-[#8069bb] border border-[#7A51E3] focus:outline-none hover:bg-[#5d40ad] focus:ring-4 font-medium rounded-lg text-sm px-2 py-2 me-2 mb-2 w-16 focus:border-blue-300 focus:shadow-outline-blue">
                             Edit
                           </button>
                         </div>
